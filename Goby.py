@@ -2,6 +2,12 @@ import streamlit as st
 from PIL import Image
 st.title('GoBY')
 st.subheader('Save Time, Having the cheapest price, Making your life easier')
+st.button(label='Download GoBy')
+st.text_input(label='From')
+st.text_input(label='To')
+st.date_input(label='Select Date')
+st.time_input(label='Select Time')
+st.button(label='Calculate your Trip')
 image=Image.open('Uber.png')
 image2=Image.open('Cabify.png')
 image3=Image.open('Bolt.png')
